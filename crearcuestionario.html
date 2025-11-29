@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CREAR NUEVO CUESTIONARIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="megacontainer">
+            <div id="container4">
+                <div class="ventanaañadir">
+                    <div class="tituloañadir">AÑADIR ELEMENTOS AL CUESTIONARIO</div>
+                    <div id="containerañadir">
+                        <div id="añadirpregunta">AÑADIR PREGUNTA</div>
+                        <div class="containercolor">
+                            <div id="añadircolor">AÑADIR COLOR DE LA VENTANA <input type="color" id="colorañadido" value="#2f00ff"></div>
+                            <div id="añadircolorborde">AÑADIR COLOR DE LOS BORDES <input type="color" id="colorbordeañadido" value="#00ffff"></div>
+                            <div id="añadircolortexto">AÑADIR COLOR DEL TEXTO<input type="color" id="colortextoañadido" value="#00ffff"></div>
+                            <div id="añadircolorfondo">AÑADIR COLOR DE FONDO <input type="color" id="colorfondoañadido" value="#000000"></div>
+                            <div id="añadirtiempolimite">
+                                <p>TIEMPO LÍMITE EN LOS CUESTIONARIOS</p>
+                                <input type="checkbox" id="haytiempolimite">
+                                <input type="text" id="tiempolimite" placeholder="TIEMPO LÍMITE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ventanavisual" id="ventanavisual">
+                    <div id="ventanavacia">
+                        <div id="containertituloventana">
+                            <input id="tituloventana" placeholder="AÑADIR TITULO">
+                        </div>
+                        <div id="containerParapreguntas"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="goback3">SALIR</div>
+                <div id="guardarcuestionario">GUARDAR CUESTIONARIO</div>
+            </div>
+        </div>
+        
+        <script src="cuestionarios.js"></script>
+        <script src="crearcuestionarios.js"></script>
+    </body>
+</html>

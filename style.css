@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+* {
+    user-select: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+}
+
+.container {
+    min-width: 50%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr; 
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: blue;
+}
+
+#containerTiempo {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    min-width: 50px;
+    min-height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.containerInicio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr; 
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: blue;
+}
+
+.tituloapp {
+    color: blue;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+
+
+.vent {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ventanaquest {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 55%;
+    align-content: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 6fr 1fr 1fr;
+}
+
+.titleQuestt {
+    color: rgb(48, 104, 104);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.eliminarquest {
+    background-color: red;
+    color: white;
+    border: white solid 3px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.descargarquest {
+    background-color: gold;
+    color: white;
+    border: white solid 3px;
+    border-radius: 15px;
+    align-self: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.ventanaquest:hover {
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+    background-color: rgb(84, 84, 255);
+}
+
+#loscuestionarios {
+    width: 100%;
+    height: 900px;
+    display: block;
+    justify-items: left;
+    border-top: blue solid 2px;
+    padding-top: 30px;
+    border-bottom: blue solid 2px;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+}
+
+.containerback {
+    width: 100%;
+    display: block;
+    justify-items: right;
+}
+
+#goback {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    align-content: center;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#goback:hover {
+    transition: background-color 0.3s, border-color 0.3, color 0.3;
+    border-color: red;
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+.containerback2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    justify-items: right;
+    bottom: -95px;
+    padding: 10px;
+    margin: 100px;
+    border-top: blue solid 2px;
+}
+
+#goback2 {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    align-content: center;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#goback2:hover {
+    transition: background-color 0.3s, border-color 0.3, color 0.3;
+    border-color: red;
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.vent:hover {
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+    background-color: rgb(84, 84, 255);
+}
+
+#titulo {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#titulo2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pregunta {
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pregunta::after {
+    content: url(images/false.png);
+    padding-left: 20px;
+}
+
+.adivinada {
+    background-color: rgb(0, 255, 0);
+}
+
+.adivinada::after {
+    content: url(images/true.png);
+    padding-left: 20px;
+}
+
+.pregunta:hover {
+    transition: background-color 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+    background-color: rgb(84, 84, 255);
+}
+
+.adivinada:hover {
+    background-color: rgb(91, 255, 91);
+}
+
+
+#ventanapregunta {
+    display: block;
+    position: absolute;
+    background-color: burlywood;
+    padding: 15px;
+    border: rgb(192, 132, 20) solid;
+    border-radius: 10px;
+    border-width: 4px;
+    justify-items: center;
+}
+
+#containeropciones {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.enviarrespuesta {
+    background-color: rgb(47, 255, 57);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.enviarrespuesta:hover {
+    background-color: rgb(119, 255, 126);
+}
+
+.cancelarenviorespuesta {
+    background-color: red;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cancelarenviorespuesta:hover {
+    background-color: rgb(255, 80, 80);
+}
+
+.enunciadopregunta {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.textopregunta {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.entradarespuesta {
+    position: relative;
+    margin-top: 20px;
+    width: 80vw;
+}
+
+#notificacion {
+    position: absolute;
+    bottom: 170px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#respuestaincorrecta {
+    position: absolute;
+    bottom: 100px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: red;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+#respuestacorrecta {
+    position: absolute;
+    bottom: 100px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: rgb(0, 255, 21);
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+#respuestavacia {
+    position: absolute;
+    bottom: 150px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: rgb(255, 217, 0);
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#megacontainer {
+    position: absolute;
+    align-content: center;
+    display: grid;
+    grid-template-areas: 
+    "main"
+    "footer";
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 6fr 1fr;
+}
+
+#container4 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.ventanaañadir {
+    display: grid;
+    border-right: blue solid 5px;
+    padding-top: 40px;
+    grid-template-rows: 1fr 4fr;
+}
+
+.tituloañadir {
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: blue solid 5px;
+}
+
+#añadirpregunta, #añadircolor, #añadircolorborde, #añadircolorfondo, #añadircolortexto, #añadirtiempolimite {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(0, 117, 117);
+    width: 95%;
+    justify-self: center;
+    color: white;
+    border: cyan solid 3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#añadirtiempolimite {
+    padding-bottom: 10px;
+}
+
+#añadirtiempolimite p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#añadirtiempolimite #tiempolimite {
+    font-size: 20px;
+    color: black;
+}
+
+#haytiempolimite {
+    outline: 1px solid black;
+}
+
+
+#añadirpregunta:hover {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, margin-bottom 0.3s;
+    margin-bottom: 16px;
+    background-color: cyan;
+    color: rgb(0, 117, 117);
+    border-color: rgb(0, 117, 117);
+} 
+
+#añadircolor:hover {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, margin-top 0.3s;
+    margin-top: 16px;
+    background-color: cyan;
+    color: rgb(0, 117, 117);
+    border-color: rgb(0, 117, 117);
+}
+
+#añadircolorfondo:hover {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, margin-top 0.3s;
+    margin-top: 16px;
+    background-color: cyan;
+    color: rgb(0, 117, 117);
+    border-color: rgb(0, 117, 117);
+}
+
+#añadircolorborde:hover {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, margin-top 0.3s;
+    margin-top: 16px;
+    background-color: cyan;
+    color: rgb(0, 117, 117);
+    border-color: rgb(0, 117, 117);
+}
+
+#añadirtiempolimite:hover {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, margin-top 0.3s;
+    margin-top: 16px;
+    background-color: cyan;
+    color: rgb(0, 117, 117);
+    border-color: rgb(0, 117, 117);
+}
+
+.ventanavisual {
+    justify-items: center;
+    align-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-right: 10px;
+    border-top: blue solid 5px;
+}
+
+#guardarcuestionario {
+    background-color: gold;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    align-content: center;
+    justify-self: right;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#guardarcuestionario:hover {
+    transition: background-color 0.3s, border-color 0.3, color 0.3;
+    border-color: gold;
+    color: gold;
+    background-color: rgb(255, 255, 255);
+}
+
+#ventanavacia {
+    border: rgb(0, 225, 255) solid 3px;
+    background-color: rgb(47, 0, 255);
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 8fr;
+    border-radius: 15px;
+    justify-items: center;
+}
+
+#tituloventana {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: cyan;
+    font-weight: 700;
+    font-size: 25px;
+    width: 60vw;
+    border: none;
+    border-bottom: cyan solid 3px;
+    background-color: rgb(47, 0, 255);
+}
+
+
+.containerventanapreguntas {
+    background-color: rgb(0, 0, 204);
+    color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 50vw;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr 4fr 1fr;
+    grid-template-areas: 
+    "lol0 lol1 lol2 lol3"
+    "lol0 lol1 lol2 .";
+    border: cyan solid 3px;
+}
+
+.containerventanapreguntas:hover {
+    transition: background-color 0.3 color 0.3;
+    background-color: aqua;
+    color: rgb(0, 0, 204);
+}
+
+#containerParapreguntas {
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.container5 {
+    grid-area: lol1;
+}
+
+.container6 {
+    grid-area: lol2;
+}
+
+.container8 {
+    grid-area: lol0;
+}
+
+.container7 {
+    grid-area: lol3;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: white solid 2px;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    width: 3vw;
+    max-width: 30px;
+    justify-self: right;
+    transition: 0.3s;
+}
+
+#container7:hover {
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+.preguntaeditar {
+    width: 14vw;
+    font-size: 20px;
+}
+
+.inputpreguntaeditar {
+    width: 30vw;
+    font-size: 20px;
+}
+
+#goback3 {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    align-content: center;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#goback3:hover {
+    transition: background-color 0.3s, border-color 0.3, color 0.3;
+    border-color: red;
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+#seacaboeltiempo {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+#tituloacabartiempo {
+    color: rgb(100, 100, 100);
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+    align-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+#puntuacionquest {
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+    align-content: center;
+}
+
+#infopuntuacionquest {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 25px;
+}
+
+#titulopuntuacion {
+    color: rgb(179, 179, 179);
+    font-weight: 600;
+}
+
+#footeracabartiempo {
+    background-color: rgb(22, 22, 22);
+    justify-items: center;
+    align-content: center;
+}
+
+#reintentarquest {
+    background-color: rgb(22, 22, 22);
+    color: rgb(179, 179, 179);
+    border: 2px solid blue;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 1000;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#reintentarquest:hover {
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    border-color: rgb(41, 41, 255);
+    background-color: rgb(41, 41, 41);
+    color: rrgb(221, 221, 221)
+}
+
+@media (max-width: 446px) {
+    body {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerInicio {
+        width: 90%;
+        min-width: 180px;
+        max-width: 370px;
+        justify-items: center;
+        align-content: center;
+        justify-self: center;
+    }
+    
+    .tituloapp {
+        font-size: 35px;
+        max-width: 380px;
+        width: 90%;
+        min-width: 80px;
+    }
+
+    .vent {
+        max-width: 380px;
+        width: 90%;
+        min-width: 80px;
+        text-align: center;
+    }
+
+    #titulo2 {
+        max-width: 380px;
+        min-width: 180px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #loscuestionarios {
+        max-width: 380px;
+        width: 80%;
+        height: 70%;
+        max-height: 530px;
+        justify-items: center;
+    }
+
+    #containerback {
+        max-width: 290px;
+        width: 80%;
+    }
+
+    .ventanaquest {
+        width: 70%;
+    }
+
+    #megacontainer {
+        /* width: 90%; */
+        max-width: 446px;
+        min-width: 320px;
+    }
+
+    #container4 {
+        max-width: 446px;
+        min-width: 320px;
+    }
+
+    .footer {
+        max-width: 446px;
+        height: 60px;
+    }
+
+    #goback3 {
+        width: 120px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    #guardarcuestionario {
+        width: 250px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    #tituloventana {
+        max-width: 205px;
+    }
+
+    .containerventanapreguntas {
+        width: 90%;
+    }
+
+    .inputpreguntaeditar {
+        width: 100%;
+    }
+
+    .preguntaeditar {
+        width: 90%;
+    }
+
+    .container7 {
+        width: 70%;
+    }
+}
